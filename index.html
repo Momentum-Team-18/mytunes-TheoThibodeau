@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="main.js" defer></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+/>
   <title>Music Search</title>
 </head>
 <body>
-  <div id="mainContainer"></div>
+<div id="mainContainer">
+  <audio controls src="" id="audioTag"></audio>
   <form id="form">
     <label for="searchArtist">Search for Artist</label>
-    <input type="text" id="searchField">
+    <input class="input is-success" type="text" placeholder="Success input" id="searchField" required>
     <button type="submit" id="searchButton">Search</button>
   </form>
+  <div id="playButton">
+    <div id="songs"></div>
+  </div>
+</div>
 </body>
 </html>
-
-<!-- build html css js
-add container
-add api connect and console log
-identify array elements for queries -->
